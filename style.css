@@ -1,0 +1,55 @@
+
+body{
+    background-image: linear-gradient(rgb(182, 224, 215),rgb(207, 155, 187));
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+#tekst{
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(182, 231, 225);
+    border: 5px solid rgb(197, 182, 206);
+    padding: 0.9em;
+    margin-left: 4em;
+    margin-right: 4em;;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.col-1{
+   text-align: center;
+   padding: 1em;
+
+  }
+
+  .col-2 {
+    text-align: center;
+    padding: 1em;
+  }
+
+#minnie{ 
+    width: 44%;
+    border-radius: 25%;
+}
+
+#roger{ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 44%;
+    border-radius: 25%;
+}
+  
+/*div.container {
+    text-align: left ;
+    padding: 10px 20px;
+  }
+*/

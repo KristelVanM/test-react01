@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ReactTesting01</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Titel</h1>
+    <div id="main">
+        <div id="tekst">
+            <p>Meowing non stop for food. Eat too much then proceed to regurgitate all over living room carpet while humans eat dinner the cat was chasing the mouse. Sit in window and stare oooh, a bird, yum eat the rubberband cat slap dog in face purrrrrr touch my tail, i shred your hand purrrr or meowwww. Eat grass, throw it back up swat at dog, or run up and down stairs, for under the bed. Ignore the human until she needs to get up, then climb on her lap and sprawl. 
+            </p>
+        </div>
+
+        <div class="flex-container">
+            <div class="col-1">
+                <img src="images\IMG_20180831_170502.jpg" id="minnie" alt="Minnie" width="60%">
+                <div class="container">
+                    <!--class container is waarschijnlijk overbodig-->
+                    <p>Minnie
+                        <div class="like_button_container" data-commentid="Minnie"></div>
+                    </p>   
+                </div>
+
+            </div>
+
+            <div class="col-2">
+                <img src="images\IMG_20190422_083415.jpg" id="roger" alt="Roger" width="60%">
+                <div class="container">
+                    <p>Roger
+                        <div class="like_button_container" data-commentid="Roger"></div>
+                    </p>
+
+                   
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- Load our React component. -->
+        <script src="like_button.js"></script>
+
+</body>
+
+</html>
