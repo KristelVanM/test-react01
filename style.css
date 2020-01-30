@@ -1,3 +1,8 @@
+/* om gradient over hele pagina te laten lopen zonder herhaling:*/
+/* why tf zijn comments in elke taal met andere symbooltjes?*/
+html {
+  height: 100%;
+}
 
 body{
     background-image: linear-gradient(rgb(182, 224, 215),rgb(207, 155, 187));
@@ -6,7 +11,9 @@ body{
     margin-right: 5em;
 }
 
-#tekst{
+/* de twee buttons aanklikken verandert iets aan de breedte vd andere componenten: tekst, achtergrond, ...*/
+
+.tekst{
     font-family: monospace;
 }
 
@@ -46,8 +53,21 @@ h1 {
     margin-right: auto;
     width: 44%;
     border-radius: 25%;
+    
 }
   
+/* Stack overflow: The Button Component accepts no style props, so you are unable to style it. */
+/*button valt niet te styles voor het aanklikken*/
+.like_button_container{
+  cursor: pointer;
+  background-color:  rgb(182, 231, 225);
+  display: inline-block;/* maakt achtergrond passend aan breedte tekst*/
+  font-family: monospace;
+  padding: 0.5em;
+}
+
+
+
 /*div.container {
     text-align: left ;
     padding: 10px 20px;

@@ -2,6 +2,7 @@
 
 const e = React.createElement;
 
+//in html heet de class 'like_button_container' en hier 'LikeButton' ???? 
 class LikeButton extends React.Component {
   constructor(props) {
     super(props);
@@ -33,8 +34,9 @@ ReactDOM.render(e(LikeButton), domContainer);
 document.querySelectorAll('.like_button_container')
   .forEach(domContainer => {
     // Read the comment ID from a data-* attribute.
-    //als comment id een nummer is/moet zijn:
+    //als comment-id een nummer is/moet zijn =
     //const commentID = parseInt(domContainer.dataset.commentid, 10);
+    //als comment-id een string is:
     const commentID = String(domContainer.dataset.commentid);
     ReactDOM.render(
       e(LikeButton, { commentID: commentID }),
